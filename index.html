@@ -470,6 +470,27 @@ html, body {
 .toast-ok { background:#1b4332; color:#4cff91; border:1px solid #2d6a4f; box-shadow:0 4px 20px rgba(76,255,145,.2); }
 .toast-err { background:#3b0a0a; color:#ff5252; border:1px solid #8b2020; box-shadow:0 4px 20px rgba(255,82,82,.2); }
 
+/* ============================= SPRITE EDITOR ============================= */
+.sprite-tool-btn {
+  width:38px; height:38px; border-radius:var(--radius-sm);
+  border:1px solid var(--border); background:var(--bg3);
+  color:var(--text); font-size:16px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all var(--transition); flex-shrink:0;
+}
+.sprite-tool-btn:active { transform:scale(0.9); }
+.sprite-tool-btn.active { background:var(--blue); border-color:var(--blue); color:white; }
+.sprite-item {
+  display:flex; align-items:center; gap:8px;
+  padding:8px; border:1px solid var(--border); border-radius:var(--radius-sm);
+  margin-bottom:6px; background:var(--card-bg); transition:all var(--transition);
+}
+.sprite-item:active { transform:scale(0.95); }
+.sprite-del-btn {
+  background:transparent; border:none; cursor:pointer;
+  font-size:14px; padding:2px; color:var(--text2);
+}
+
 /* ============================= SCROLLBARS ============================= */
 ::-webkit-scrollbar { width:3px; height:3px; }
 ::-webkit-scrollbar-track { background:transparent; }
